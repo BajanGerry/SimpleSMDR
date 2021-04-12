@@ -1,0 +1,94 @@
+html {
+    display: table;
+    margin: auto;
+    text-align: center;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    max-width: max-content;
+    margin: auto;
+}
+td {
+    background-color: #FFF;
+    border:1px solid black;
+    padding: 5px;
+}
+table {
+    background-color: #FFF;
+    width: 100%;
+    border-collapse: collapse;
+}
+h1 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #CCCCCC;
+    height: 1px;
+    margin-bottom: 25px;
+}
+#styletwo {
+    position: relative;
+    display: block;
+    height: 24px;
+    font-size: 11px;
+    font-weight: bold;
+    background: transparent url(bgOFF.gif) repeat-x top left;
+    font-family: Arial,Verdana,Helvitica,sans-serif;
+    width: 715px;
+}
+
+#styletwo ul {
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    width: 715px;
+}
+
+#styletwo ul li {
+     display: block;
+     float: left;
+     margin: 0 1px 0 0;
+}
+
+#styletwo ul li a {
+     display: block;
+     float: left;
+     color: #000;
+     text-decoration: none;
+     padding: 6px 20px 0 20px;
+     height: 24px;
+}
+
+#styletwo ul li a:hover, #styletwo ul li a.current {
+     color: #fff;
+     background: transparent url(bgON.gif) repeat-x top left;
+}
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+input[type=text] {
+    width: 100%;
+#    padding: 12px 20px;
+#    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

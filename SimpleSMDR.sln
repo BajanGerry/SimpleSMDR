@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSMDR.Server", "SimpleSMDR\SimpleSMDR.Server\SimpleSMDR.Server.csproj", "{7D0F7B1F-04FE-4F9B-B5D6-5DCDD91BB204}"
+EndProject
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "SimpleSMDR", "SimpleSMDR\SimpleSMDR\SimpleSMDR.msbuildproj", "{3F67390D-A8DD-4FBE-AA55-135049629D9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D0F7B1F-04FE-4F9B-B5D6-5DCDD91BB204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D0F7B1F-04FE-4F9B-B5D6-5DCDD91BB204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D0F7B1F-04FE-4F9B-B5D6-5DCDD91BB204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D0F7B1F-04FE-4F9B-B5D6-5DCDD91BB204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F67390D-A8DD-4FBE-AA55-135049629D9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F67390D-A8DD-4FBE-AA55-135049629D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F67390D-A8DD-4FBE-AA55-135049629D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F67390D-A8DD-4FBE-AA55-135049629D9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2D5D3AB-D3CA-4938-A0D7-DC5D161147D1}
+	EndGlobalSection
+EndGlobal
