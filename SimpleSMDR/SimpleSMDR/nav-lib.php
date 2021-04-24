@@ -7,7 +7,6 @@ function top()  {
 <title>Simple SMDR Reporting Application </title> 
 <link rel="stylesheet" type="text/css" media="screen" href="style.css">
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
-<style type="text/css">@import url("style.css"); </style>
 </head>
 <body align = "center"> 
 <a href='index.php'> <img src='images/simplesmdrlogo.jpg'>  </a>
@@ -19,12 +18,11 @@ function top()  {
       <li><a href='accountcodelist.php'>Account Codes</a></li>
       <li><a href='trunk.php'>Trunks</a></li>
       <li><a href='pbx.php'>PBX Configuration</a></li>
+      <li><a href='https://simplesmdr.sourceforge.io'>Help </a>
     </ul>
   </div>
 </div>
-
- 
-<td align='center' valign='top'>
+ <td align='center' valign='top'>
 <?php
 }
   // this is the bottom of the page..
