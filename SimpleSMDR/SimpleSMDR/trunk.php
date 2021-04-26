@@ -7,26 +7,6 @@ $result = $sth->fetchAll();
 ?>
 <html>
 <head>
-<title>SMDR reporting</title>
-<style type="text/css">
-<!--
-
-table {
-  background-color:#FFF;
-  width:100%;
-  border-collapse:collapse;
-}
-
-/* and of course a default one */
-
-td {
-  background-color:#FFF;
-  padding:5px;
-}
-
--->
-</style>
-
 </head>
 <html>
 <body>
@@ -40,7 +20,8 @@ td {
 $rowno += 1;
 ?>
   <tr>
-    <td><div align="center"><font size="-1"><a href='trunked.php?a=<?php echo $row["trunk"];?> '><?php echo $row["trunk"];?></a></font></div></td>
+    <td><div align="center"><font size="-1"><a href='trunked.php?a=<?php echo $row["trunk"];?> '><?php echo $row["trunk"];?></a>
+        <a href='empty.php?a=trunk&amp;trunk=<?php echo $row["trunk"];?> '> - Del</a></font></div></td></font></div></td>
     <td><div align="center"><font size="-1"><?php echo $row["name"];?></A></font></div></td>
   </tr>
   <?php

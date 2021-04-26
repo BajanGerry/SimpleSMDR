@@ -18,11 +18,11 @@ top();
 <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
 </head>
 <div align="center" id="links">
-  <h2><a href='https://simplesmdr.sourceforge.io' target ="_blank">
-  Please visit the website for latest information</a></h2>
+  <h2>Please visit the website for latest information</h2>
 <!--  <img src="images/smdr.gif" width=650/> -->
+<a href='https://simplesmdr.sourceforge.io' target ="_blank">
 <iframe src="https://simplesmdr.sourceforge.io" width="700" height="700"></iframe>
-</div>
+</a></div>
 <script src="http://code.jquery.com/jquery-latest.min.js"
 type="text/javascript"></script>
 <script type='text/javascript'>

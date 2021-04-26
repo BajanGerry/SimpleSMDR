@@ -44,6 +44,7 @@ $count = $con->prepare("SELECT COUNT(*) FROM `import`");
     <td nowrap><div > <font size="-1"><strong>Call Seq</strong></font></div></td>
     <td nowrap><div > <font size="-1"><strong>Associated</strong></font></div></td>
     <td nowrap><div > <font size="-1"><strong>System ID</strong></font></div></td>
+    <td nowrap><div > <font size="-1"><strong>Delete Record</strong></font></div></td>
   </tr>
 <tr>
   <div><form action="<?=$_SERVER['PHP_SELF'];?>" method="POST" name="Seach form">
@@ -212,7 +213,11 @@ $count = $con->prepare("SELECT COUNT(*) FROM `import`");
 		echo("<option value='".$row['sysid']."'>".$row['sysid']."</option>");
 		}
 	?>
-	</strong></select></td></div>
+	</strong></select></td>
+	  <td nowrap ><strong>
+	<a href='empty.php?a=all'> Delete All</a>
+	</strong></td>
+	</div>
 </tr> 
   <input type = "submit" value="Update" style="font-size: larger; background-color: green; padding: 10px 10px; font-size: 16px; display: inline-block;"> 
 <?php
@@ -260,6 +265,7 @@ else {
     <td><div ><font size="-1"><?php echo $row["callseq"];?></A></font></div></td>
     <td><div ><font size="-1"><?php echo $row["assocall"];?></A></font></div></td>
     <td><div ><font size="-1"><?php echo $row["sysid"];?></A></font></div></td>
+    <td><div ><font size="-1"><a href='empty.php?a=data&amp;data=<?php echo $row["id"];?> '> Delete </a></font></div></td>
   </tr>
   <?php
 }
