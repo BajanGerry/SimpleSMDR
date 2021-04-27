@@ -56,9 +56,14 @@ input[type=submit] {
     cursor: pointer;
 }
 .navbar {
+    position: fixed;
     overflow: hidden;
     background-color: #E0E7E9;
-  }
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
   
   .navbar a {
     float: left;

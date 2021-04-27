@@ -39,7 +39,7 @@ $rowno += 1;
 ?>
   <tr>
     <td><div align="center"><font size="-1"><a href='accountcodeed.php?a=<?php echo $row["accountcode"];?> '><?php echo $row["accountcode"];?></a>
-        <a href='empty.php?a=acc&amp;acc=<?php echo $row["accountcode"];?> '> - Del</a></font></div></td>
+        <a href='empty.php?a=acc&amp;acc=<?php echo $row["accountcode"];?> '> - Delete</a></font></div></td>
     <td><div align="center"><font size="-1"><?php echo $row["name"];?></A></font></div></td>
   </tr>
   <?php

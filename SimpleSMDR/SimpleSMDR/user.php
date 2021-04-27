@@ -22,7 +22,7 @@ $rowno += 1;
 ?>
   <tr>
     <td><div align="center"><font size="-1"><a href='usered.php?a=<?php echo $row["extension"];?> '><?php echo $row["extension"];?></a>
-        <a href='empty.php?a=ext&amp;ext=<?php echo $row["extension"];?> '> - Del</a></font></div></td>
+        <a href='empty.php?a=ext&amp;ext=<?php echo $row["extension"];?> '> - Delete</a></font></div></td>
     <td><div align="center"><font size="-1"><?php echo $row["first"];?></A></font></div></td>
     <td><div align="center"><font size="-1"><?php echo $row["last"]; ?></font></div></td>
   </tr>
