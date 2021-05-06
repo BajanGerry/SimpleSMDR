@@ -21,8 +21,7 @@ function top()
   <div class="dropdown">
     <button class="dropbtn">Administration</button>
     <div class="dropdown-content">
-      <a href="empty.php?a=data">Delete records</a>
-      <a href="#">Link 2</a>
+      <a href="empty.php?a=delall">Delete all call data</a>
       <a href="https://simplesmdr.sourceforge.io" target="_blank">About</a>
     </div>
   </div>

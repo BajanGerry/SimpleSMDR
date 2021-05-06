@@ -7,8 +7,8 @@ if (isset($_POST['pageno'])) {
     $pageno = 1;
 }
 $rowno=0;
-if($_POST['year'] ==null ){$year_var = '%';} else {$year_var = $_POST['year'];}
-if($_POST['month'] ==null ){$month_var = '%';} else {$month_var= $_POST['month'];}
+if($_POST['year'] ==null ){$year_var = date("Y");} else {$year_var = $_POST['year'];}
+if($_POST['month'] ==null ){$month_var = date("n");} else {$month_var= $_POST['month'];}
 if($_POST['day'] ==null ){$day_var = '%';} else {$day_var= $_POST['day'];}
 if($_POST['time'] ==null ){$time_var = '%';} else {$time_var= $_POST['time'];}
 if($_POST['caller'] ==null ){$caller_var = '%';} else {$caller_var= $_POST['caller'];}
@@ -215,7 +215,7 @@ $count = $con->prepare("SELECT COUNT(*) FROM `import`");
 	?>
 	</strong></select></td>
 	  <td nowrap ><strong>
-	<a href='empty.php?a=all'> Delete All</a>
+	<a href='empty.php?a=delall'> Delete All</a>
 	</strong></td>
 	</div>
 </tr> 

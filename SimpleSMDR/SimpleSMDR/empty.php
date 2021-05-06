@@ -9,29 +9,33 @@ switch ($url){
 		$extdel->execute();
 		?> <a href='user.php'> Extension has been deleted, return to previous page</a>
 <?php
+		break;
 	case trunk:
 		$value=($_GET['trunk']);
-		$extdel = $con->prepare("delete from trunks WHERE trunk=$value");
-		$extdel->execute();
+		$trkdel = $con->prepare("delete from trunks WHERE trunk='$value'");
+		$trkdel->execute();
 		?> <a href='trunk.php'> Trunk has been deleted, return to previous page</a>
 <?php
+		break;
 	case acc:
 		$value=($_GET['acc']);
-		$extdel = $con->prepare("delete from accountcode WHERE accountcode=$value");
-		$extdel->execute();
+		$accdel = $con->prepare("delete from accountcode WHERE accountcode=$value");
+		$accdel->execute();
 		?> <a href='accountcodelist.php'> Accountcode has been deleted, return to previous page</a>
 <?php
+		break;
 	case data:
 		$value=($_GET['data']);
 		$datadel = $con->prepare("delete from import WHERE id=$value");
 		$datadel->execute();
-		?> <a href='results.php'> Record(s) has been deleted, return to previous page</a>
+		?> <a href='results.php'> DATA Record(s) has been deleted, return to previous page</a>
 <?php
-	case all:
-		$value=($_GET['all']);
-		$datadel = $con->prepare("delete from import");
-		$datadel->execute();
+		break;
+	case delall:
+		$dadel = $con->prepare("delete from import");
+		$dadel->execute();
 		?> <a href='results.php'> All data records has been deleted, return to previous page</a>
 <?php
+		break;
 }
 ?>
