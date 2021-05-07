@@ -1,25 +1,25 @@
 <?php
 include("config.php");
 top();
-if (isset($_POST['pageno'])) {
-    $pageno = $_POST['pageno'];
+if (isset($_GET['pageno'])) {
+    $pageno = $_GET['pageno'];
 } else {
     $pageno = 1;
 }
 $rowno=0;
-if($_POST['year'] ==null ){$year_var = date("Y");} else {$year_var = $_POST['year'];}
-if($_POST['month'] ==null ){$month_var = date("n");} else {$month_var= $_POST['month'];}
-if($_POST['day'] ==null ){$day_var = '%';} else {$day_var= $_POST['day'];}
-if($_POST['time'] ==null ){$time_var = '%';} else {$time_var= $_POST['time'];}
-if($_POST['caller'] ==null ){$caller_var = '%';} else {$caller_var= $_POST['caller'];}
-if($_POST['calledno'] ==null ){$calledno_var = '%';} else {$calledno_var= $_POST['calledno'];}
-if($_POST['accountcode'] ==null ){$accountcode_var = '%';} else {$accountcode_var= $_POST['accountcode'];}
-if($_POST['calledparty'] ==null ){$calledparty_var = '%';} else {$calledparty_var= $_POST['calledparty'];}
-if($_POST['transferext'] ==null ){$transferext_var = '%';} else {$transferext_var= $_POST['transferext'];}
-if($_POST['callid'] ==null ){$callid_var = '%';} else {$callid_var= $_POST['callid'];}
-if($_POST['callseq'] ==null ){$callseq_var = '%';} else {$callseq_var= $_POST['callseq'];}
-if($_POST['assocall'] ==null ){$assocall_var = '%';} else {$assocall_var= $_POST['assocall'];}
-if($_POST['sysid'] ==null ){$sysid_var = '%';} else {$sysid_var= $_POST['sysid'];}
+if($_GET['year'] ==null ){$year_var = '%';} else {$year_var = $_GET['year'];}
+if($_GET['month'] ==null ){$month_var = '%';} else {$month_var= $_GET['month'];}
+if($_GET['day'] ==null ){$day_var = '%';} else {$day_var= $_GET['day'];}
+if($_GET['time'] ==null ){$time_var = '%';} else {$time_var= $_GET['time'];}
+if($_GET['caller'] ==null ){$caller_var = '%';} else {$caller_var= $_GET['caller'];}
+if($_GET['calledno'] ==null ){$calledno_var = '%';} else {$calledno_var= $_GET['calledno'];}
+if($_GET['accountcode'] ==null ){$accountcode_var = '%';} else {$accountcode_var= $_GET['accountcode'];}
+if($_GET['calledparty'] ==null ){$calledparty_var = '%';} else {$calledparty_var= $_GET['calledparty'];}
+if($_GET['transferext'] ==null ){$transferext_var = '%';} else {$transferext_var= $_GET['transferext'];}
+if($_GET['callid'] ==null ){$callid_var = '%';} else {$callid_var= $_GET['callid'];}
+if($_GET['callseq'] ==null ){$callseq_var = '%';} else {$callseq_var= $_GET['callseq'];}
+if($_GET['assocall'] ==null ){$assocall_var = '%';} else {$assocall_var= $_GET['assocall'];}
+if($_GET['sysid'] ==null ){$sysid_var = '%';} else {$sysid_var= $_GET['sysid'];}
 
 $sth = $con->prepare("SELECT * FROM `import` WHERE `year` LIKE '$year_var' AND `month` LIKE '$month_var' AND `callingparty` LIKE '$caller_var'  AND `day` LIKE '$day_var' AND `time` LIKE '$time_var' AND `calledno` LIKE '$calledno_var' AND `calledparty` LIKE '$calledparty_var' AND `transferext` LIKE '$transferext_var' AND `accountcode` LIKE '$accountcode_var' AND `sysid` LIKE '$sysid_var' AND `callid` LIKE '$callid_var' AND `callseq` LIKE '$callseq_var' AND `assocall` LIKE '$assocall_var' ORDER BY id ASC");
 $sth->execute();
@@ -47,7 +47,7 @@ $count = $con->prepare("SELECT COUNT(*) FROM `import`");
     <td nowrap><div > <font size="-1"><strong>Delete Record</strong></font></div></td>
   </tr>
 <tr>
-  <div><form action="<?=$_SERVER['PHP_SELF'];?>" method="POST" name="Seach form">
+  <div><form action="<?=$_SERVER['PHP_SELF'];?>" method="GET" name="Seach form">
   <td nowrap ><strong>
 	<?php
 	echo "N/A";

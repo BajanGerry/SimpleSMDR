@@ -13,7 +13,7 @@ function top()
 <a href='index.php'> <img src='images/simplesmdrlogo.jpg'>  </a>
 <div align="center">
  <div class="navbar">
-   <a href='results.php'>Search All</a>
+   <a href='results.php?year=<?php echo date("Y"); ?>&month=<?php echo date("n"); ?>'>Search All</a>
    <a href='user.php'>Extensions</a>
    <a href='accountcodelist.php'>Account Codes</a>
    <a href='trunk.php'>Trunks</a>
